@@ -38,7 +38,7 @@ This shell currently has no dependencies as far as im aware, i dont think i used
 ![BSD beastie cause unix](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnhlNjN0djd3YXB0b3h6NHFoZTZnbG00bjFjdmM2ZXJobHNheWJocSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dDwicM3uFUqfC/giphy.gif)
 
 ### License: 
-[Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+[GPL 3.0](LICENSE)
 
 i would really appreciate any recognition, preferably positive tho :sweat_smile:
 so please dont be shy to like, send issues, or pull requests
