@@ -55,13 +55,21 @@ int runcmd(Command cmd)
     if (pid == 0)
     {
         // i/o redirection:
-        if (cmd.output != NULL)
-            freopen(cmd.output,"w",stdout);
-            
-        if (cmd.input != NULL)
-            freopen(cmd.input,"r",stdin);
-        
-        
+        if (cmd.output != NULL){
+
+           if ( freopen(cmd.output,"w", stdout) == NULL){
+                perror(cmd.output);
+                exit(1);
+           }
+        }
+        if (cmd.input != NULL){
+            if (freopen(cmd.input,"r",stdin == NULL)){
+                perror(cmd.input);
+                exit(1);
+            }
+        }
+
+
         execvp(cmd.argv[0],cmd.argv);
 
         perror(cmd.argv[0]);
