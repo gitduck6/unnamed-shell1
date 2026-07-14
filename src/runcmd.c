@@ -63,7 +63,7 @@ int runcmd(Command cmd)
            }
         }
         if (cmd.input != NULL){
-            if (freopen(cmd.input,"r",stdin == NULL)){
+            if (freopen(cmd.input,"r",stdin) == NULL){
                 perror(cmd.input);
                 exit(1);
             }
